@@ -1,0 +1,60 @@
+body {
+  background-color: #e0e0e0;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0px;
+  margin: 0px; }
+
+.page {
+  display: block;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin: 0 auto; }
+
+.page-header {
+  padding: 22px 40px 18px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  box-sizing: border-box; }
+
+.page-header-nav {
+  float: right; }
+  .page-header-nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-top: 12px; }
+    .page-header-nav ul li {
+      float: left;
+      margin-right: 100px; }
+      .page-header-nav ul li a {
+        text-decoration: none;
+        color: #233040; }
+        .page-header-nav ul li a:hover {
+          color: #83898f; }
+        .page-header-nav ul li a.link {
+          color: #099cc9; }
+      .page-header-nav ul li:last-child {
+        margin-right: 0px; }
+
+@media screen and (min-width: 1150px) {
+  .page {
+    max-width: 1140px;
+    width: 100%; } }
+@media screen and (min-width: 993px) and (max-width: 1149px) {
+  .page {
+    width: 960px; } }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .page {
+    width: 740px; } }
+/* Tablet and Smaller */
+@media screen and (max-width: 767px) {
+  .page {
+    width: 100%; }
+
+  .page-header {
+    padding: 14px 14px 14px 14px; }
+
+  .page-header-logo img {
+    width: 120px; }
+
+  .page-header-nav ul li {
+    font-size: 13px;
+    margin-right: 20px; } }
