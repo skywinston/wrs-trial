@@ -275,6 +275,32 @@ p {
 
 // END Social-Style Collaboration
 
+// BEGIN Analytics Dashboard
+
+.analytics {
+  @include flex-row-center;
+  border-bottom: 1px solid $background;
+  padding: 0 5%;
+  figure {
+    align-self: flex-end;
+    flex: 1 1 auto;
+    margin: 0px;
+    img {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  div {
+    align-self: flex-start;
+    flex: 1 1 auto;
+    max-width: 364px;
+    padding-top: 80px;
+    padding-right: 40px;
+  }
+}
+
+// END Analytics Dashboard
+
 // MEDIA QUERIES & BREAKPOINTS
 @media screen and (min-width: 1150px){
   .page {
@@ -304,6 +330,17 @@ p {
   .mls {
     figure {
       padding-left: 8%;
+    }
+  }
+
+  .analytics {
+    div {
+      padding-right: 0px;
+    }
+    figure {
+      img {
+        width: 80%;
+      }
     }
   }
 }
@@ -339,6 +376,17 @@ p {
   .collaboration {
     figure {
       padding-left: 2%;
+    }
+  }
+
+  .analytics {
+    div {
+      padding-right: 20px;
+    }
+    figure {
+      img {
+        width: 80%;
+      }
     }
   }
 }
@@ -378,7 +426,8 @@ p {
   .clients,
   .streams,
   .mls,
-  .collaboration {
+  .collaboration,
+  .analytics {
     @include flex-col-center;
     text-align: center;
     padding: 40px 2%;
@@ -418,11 +467,28 @@ p {
   }
 
   .collaboration {
+    border-bottom: 1px solid $background;
     figure {
       padding: 0px;
       margin-top: 40px;
     }
     div {
+      padding: 0px;
+    }
+  }
+
+  .analytics {
+    border-bottom: 1px solid $background;
+    padding-bottom: 0px;
+    figure {
+      align-self: auto;
+      order: 2;
+      width: 60%;
+      padding: 0px;
+      margin-top: 40px;
+    }
+    div {
+      align-self: auto;
       padding: 0px;
     }
   }
