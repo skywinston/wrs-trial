@@ -2,6 +2,7 @@ $background: #E0E0E0;
 $text: #233040;
 $link: #099cc9;
 $link-hover: #83898F;
+$hero-subtext: #596569;
 
 body {
   background-color: $background;
@@ -10,9 +11,16 @@ body {
   margin: 0px;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 .page{
-  display: block;
-  box-sizing: border-box;
+  // display: block;
   background-color: #ffffff;
   margin: 0 auto;
 }
@@ -51,6 +59,39 @@ body {
       }
     }
   }
+}
+
+.hero {
+  display: block;
+  box-sizing: border-box;
+  padding: 5% 5% 5% 0px;
+
+}
+
+.hero-figure {
+  display: block;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 80px;
+}
+
+.hero-text {
+  width: 50%;
+  text-align: center;
+  h1 {
+    font-size: 46px;
+    font-weight: lighter;
+    margin-bottom: 22px;
+  }
+}
+
+.hero-subtext {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  width: 378px;
+  line-height: 30px;
+  color: $hero-subtext;
 }
 
 @media screen and (min-width: 1150px){

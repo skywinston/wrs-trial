@@ -4,9 +4,13 @@ body {
   padding: 0px;
   margin: 0px; }
 
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
 .page {
-  display: block;
-  box-sizing: border-box;
   background-color: #ffffff;
   margin: 0 auto; }
 
@@ -33,6 +37,33 @@ body {
           color: #099cc9; }
       .page-header-nav ul li:last-child {
         margin-right: 0px; }
+
+.hero {
+  display: block;
+  box-sizing: border-box;
+  padding: 5% 5% 5% 0px; }
+
+.hero-figure {
+  display: block;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 80px; }
+
+.hero-text {
+  width: 50%;
+  text-align: center; }
+  .hero-text h1 {
+    font-size: 46px;
+    font-weight: lighter;
+    margin-bottom: 22px; }
+
+.hero-subtext {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  width: 378px;
+  line-height: 30px;
+  color: #596569; }
 
 @media screen and (min-width: 1150px) {
   .page {
