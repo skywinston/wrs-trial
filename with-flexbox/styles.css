@@ -4,18 +4,23 @@ body {
   padding: 0px;
   margin: 0px; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #233040; }
+
 /* Positioning for Flex Items */
 .right {
   margin-left: auto; }
 
 .link {
-  color: #099cc9; }
+  color: #099cc9;
+  cursor: pointer; }
 
 .page {
   display: flex;
   flex-flow: column;
   background-color: #ffffff;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #6c787c; }
 
 section {
   display: flex;
@@ -50,7 +55,8 @@ section {
 .hero {
   display: flex;
   flex-flow: row;
-  padding: 5.8%; }
+  padding: 5.8% 5.8% 2% 5.8%;
+  border-bottom: 1px solid #e0e0e0; }
 
 .hero-figure {
   width: 372px; }
@@ -94,6 +100,21 @@ section {
   margin-top: 28px; }
   .hero-subtext img {
     padding-left: 10px; }
+
+.clients {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 4% 2%; }
+  .clients h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter; }
+  .clients p {
+    max-width: 755px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px; }
 
 @media screen and (min-width: 1150px) {
   .page {
