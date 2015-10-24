@@ -233,6 +233,30 @@ p {
 
 // END Property Streams
 
+// BEGIN MLS Listing Alerts
+
+.mls {
+  padding: 5%;
+  @include flex-row-center;
+  justify-content: space-around;
+  figure {
+    flex: 2 1 auto;
+    margin: 0px;
+    padding-left: 14%;
+    width: 100%;
+    img {
+      width: 100%;
+      max-width: 164px;
+    }
+  }
+  div {
+    flex: 1 1 auto;
+    padding-right: 40px;
+  }
+}
+
+// END MLS Listing Alerts
+
 // MEDIA QUERIES & BREAKPOINTS
 @media screen and (min-width: 1150px){
   .page {
@@ -258,6 +282,12 @@ p {
       font-size: 38px;
     }
   }
+
+  .mls {
+    figure {
+      padding-left: 8%;
+    }
+  }
 }
 
 @media screen and (min-width: 768px)
@@ -279,6 +309,12 @@ p {
     padding-left: 0px;
     h1 {
       font-size: 32px;
+    }
+  }
+
+  .mls {
+    figure {
+      padding-left: 4%;
     }
   }
 }
@@ -316,9 +352,11 @@ p {
 
   .hero,
   .clients,
-  .streams {
+  .streams,
+  .mls {
     @include flex-col-center;
     text-align: center;
+    padding: 40px 2%;
   }
 
   .hero-figure {
@@ -329,11 +367,28 @@ p {
   .hero-text {
     @include flex-col-center;
     padding-left: 0px;
+    h1 {
+      margin-top: 0px;
+      font-size: 32px;
+    }
   }
 
   .streams {
+    border-bottom: 1px solid $background;
     figure {
       margin-top: 40px;
+    }
+  }
+
+  .mls {
+    border-bottom: 1px solid $background;
+    figure {
+      order: 2;
+      padding: 0px;
+      margin-top: 40px;
+    }
+    div {
+      padding: 0px;
     }
   }
 }
