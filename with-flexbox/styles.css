@@ -7,8 +7,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #233040; }
 
-/* Positioning for Flex Items */
-.right {
+p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #6c787c; }
+
+.float-right {
   margin-left: auto; }
 
 .link {
@@ -22,10 +26,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   color: #6c787c; }
 
-section {
-  display: flex;
-  flex-flow: row; }
+.feature-blurb h1 {
+  font-size: 28px;
+  font-weight: lighter;
+  line-height: 38px;
+  text-align: left; }
 
+@media screen and (max-width: 767px) {
+  .feature-blurb h1 {
+    text-align: center; } }
 .page-header {
   display: flex;
   flex-flow: row;
@@ -105,7 +114,8 @@ section {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 4% 2%; }
+  border-bottom: 1px solid #e0e0e0;
+  padding: 3% 2%; }
   .clients h1 {
     text-align: center;
     font-size: 30px;
@@ -115,6 +125,23 @@ section {
     text-align: center;
     font-size: 14px;
     line-height: 26px; }
+
+.streams {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding: 5%; }
+  .streams div {
+    flex: 1 1 auto;
+    padding-left: 40px;
+    padding-right: 40px; }
+  .streams figure {
+    flex: 1 1 auto;
+    margin: 0px;
+    width: 100%; }
+    .streams figure img {
+      width: 100%;
+      max-width: 380px; }
 
 @media screen and (min-width: 1150px) {
   .page {
@@ -167,9 +194,13 @@ section {
     flex-flow: column;
     align-items: center; }
 
-  .hero {
+  .hero,
+  .clients,
+  .streams {
+    display: flex;
     flex-flow: column;
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
 
   .hero-figure {
     padding-top: 52px;
@@ -179,4 +210,7 @@ section {
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding-left: 0px; } }
+    padding-left: 0px; }
+
+  .streams figure {
+    margin-top: 40px; } }
