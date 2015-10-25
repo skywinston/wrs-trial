@@ -190,13 +190,39 @@ p {
     margin: 0px; }
     .analytics figure img {
       width: 100%;
-      max-width: 500px; }
+      max-width: 500px;
+      margin-bottom: -5px; }
   .analytics div {
     align-self: flex-start;
     flex: 1 1 auto;
     max-width: 364px;
     padding-top: 80px;
     padding-right: 40px; }
+
+.devices {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 4%;
+  background: no-repeat center/100% url(../images/floating_devices@2x.png); }
+  .devices h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: lighter; }
+  .devices p {
+    text-align: center;
+    max-width: 570px; }
+
+.download-apps {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  align-self: center; }
+  .download-apps a:first-of-type {
+    padding-right: 12px; }
+  .download-apps a:last-of-type {
+    padding-left: 12px; }
 
 @media screen and (min-width: 1150px) {
   .page {
@@ -326,4 +352,15 @@ p {
       margin-top: 40px; }
     .analytics div {
       align-self: auto;
-      padding: 0px; } }
+      padding: 0px; }
+
+  .download-apps {
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    .download-apps a {
+      padding: 6px; }
+    .download-apps a:first-of-type {
+      padding: 6px; }
+    .download-apps a:last-of-type {
+      padding: 6px; } }

@@ -288,6 +288,7 @@ p {
     img {
       width: 100%;
       max-width: 500px;
+      margin-bottom: -5px;
     }
   }
   div {
@@ -300,6 +301,37 @@ p {
 }
 
 // END Analytics Dashboard
+
+// BEGIN Devices
+
+.devices {
+  @include flex-col-center;
+  padding: 4%;
+  background: no-repeat center/100% url(../images/floating_devices@2x.png);
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: lighter;
+  }
+  p {
+    text-align: center;
+    max-width: 570px;
+  }
+}
+
+.download-apps {
+  margin-top: 20px;
+  @include flex-row-center;
+  align-self: center;
+  a:first-of-type {
+    padding-right: 12px;
+  }
+  a:last-of-type {
+    padding-left: 12px;
+  }
+}
+
+// END Devices
 
 // MEDIA QUERIES & BREAKPOINTS
 @media screen and (min-width: 1150px){
@@ -490,6 +522,19 @@ p {
     div {
       align-self: auto;
       padding: 0px;
+    }
+  }
+
+  .download-apps {
+    @include flex-col-center;
+    a {
+      padding: 6px;
+    }
+    a:first-of-type {
+      padding: 6px;
+    }
+    a:last-of-type {
+      padding: 6px;
     }
   }
 }
