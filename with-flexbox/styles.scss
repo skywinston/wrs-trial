@@ -132,14 +132,23 @@ p {
 }
 
 .hero-figure {
-  width: 372px;
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 372px;
   img {
     width: 372px;
   }
 }
 
 .hero-text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 1 auto;
   padding-left: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
   text-align: center;
   h1 {
     font-size: 46px;
@@ -179,6 +188,38 @@ p {
   margin-top: 28px;
   img {
     padding-left: 10px;
+  }
+}
+
+.signup-form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.signup-form.hidden {
+  display: none;
+}
+
+#try-cloud-streams {
+  input {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    display: block;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #BEBEBE;
+    border-radius: 3px;
+    height: 36px;
+    width: 253px;
+    padding-left: 11px;
+    margin-bottom: 16px;
+    &:focus {
+      border: 1px solid $link;
+    }
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -551,7 +592,7 @@ footer {
 
   .hero-text {
     @include flex-col-center;
-    padding-left: 0px;
+    padding: 0px;
     h1 {
       margin-top: 0px;
       font-size: 32px;
